@@ -1,0 +1,30 @@
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #ebebeb;
+    font-family: sans-serif;
+}
+
+.odd{
+    background-color: #34345b;
+}
+
+header{
+    text-align: center;
+    font-size: 60px;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 45px 20px 45px;
+    font-weight: bold;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #a6a6a6;
+}
