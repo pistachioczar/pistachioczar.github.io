@@ -1,3 +1,5 @@
+/*General Design*/
+
 body, html {
     padding: 0;
     margin: 0;
@@ -12,14 +14,19 @@ body{
     background-color: #34345b;
 }
 
+/*Header Design*/
+
 header{
     text-align: center;
-    font-size: 60px;
+    font-size: 55px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 header nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 20px 45px 20px 45px;
     font-weight: bold;
 }
@@ -27,4 +34,97 @@ header nav{
 header nav a{
     text-decoration: none;
     color: #a6a6a6;
+    margin: 0px 20px;
+}
+
+header nav a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+/*Home Design*/
+
+#home{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-text{
+    width: 400px;
+}
+
+#home-text h1{
+    font-size: 40px;
+}
+
+#home-text p{
+    font-size: 23px;
+}
+
+.profile-picture{
+    border-radius: 100%;
+    width: 300px;
+}
+
+#home-text, #profile-img{
+    margin: 50px 30px 50px 30px;
+    padding: 0;
+}
+
+/*Projects Design*/
+
+#projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 800px;
+}
+
+.project-card{
+    background-color: #646782;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.project-text{
+    padding: 20px;
+}
+
+.project-card ul{
+    padding: 0px 20px;
+}
+
+.project-photo{
+    border-radius: 100%;
+    width: 60%;
+    padding-top: 30px;
+}
+
+/*Certificates Design*/
+
+#certificates{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    font-size: 30px;
+}
+
+table, th, td {
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+table{
+    width: 80%;
+}
+
+tr{
+    height: 70px;
 }
