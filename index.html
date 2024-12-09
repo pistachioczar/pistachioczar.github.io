@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Zach Hargett</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/5186693ab4.js" crossorigin="anonymous"></script>
+    <!--
+        Author: Zach Hargett
+        Date: 12/9/2024
+        Project: Portfolio Website
+    -->
 </head>
 <body>
     <header class="odd">
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Projects</a>
-            <a href="#">Certificates</a>
-            <a href="#">Contact Me!</a>
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#contact-me">Contact Me!</a>
         </nav>
     </header>
 
@@ -22,8 +28,9 @@
                 Hi! I'm Zach Hargett
             </h1>
             <p>
-                This is a description. Ill figure out what to put in here when I actually 
-                make my website but until then I guess this will be filler
+                As a Computer Science major at Ozarks Technical Community College, I'm passionate about crafting 
+                innovative software solutions. My studies have equipped me with a strong foundation in programming 
+                languages like Python and Java, enabling me to tackle a wide range of technical challenges.
             </p>    
         </div>
         <div id="profile-img">
@@ -36,7 +43,7 @@
             <img src="images/ASCII.png" alt="Java ASCII Converter" class="project-photo">
 
             <div class="project-text">
-                <h2>Java Photo to ASCII Converter</h2>
+                <a href="https://github.com/pistachioczar/Photo-To-Ascii" target="_blank"><h2>Java Photo to ASCII Converter</h2></a>
                 <ul>
                     <li><h4>I made an app in java that parses image data and returns the photo in ASCII on a text file</h4></li>
                     <li><h4>Allows for users to use both jpg and png image formats</h4></li>
@@ -53,7 +60,7 @@
             <img src="images/ASCII.png" alt="Java ASCII Converter" class="project-photo">
 
             <div class="project-text">
-                <h2>Java Photo to ASCII Converter</h2>
+                <a href="https://github.com/pistachioczar/Photo-To-Ascii" target="_blank"><h2>Java Photo to ASCII Converter</h2></a>
                 <ul>
                     <li><h4>I made an app in java that parses image data and returns the photo in ASCII on a text file</h4></li>
                     <li><h4>Allows for users to use both jpg and png image formats</h4></li>
@@ -89,6 +96,28 @@
 
     <div id="contact-me" class="odd">
         <h1>Contact Me!</h1>
+
+        <form action="#">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name...">
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="Your Email...">
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
+
+            <input type="submit" value="Submit" id="submit">
+        </form>
     </div>
+
+    <footer>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:zachhargett6@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+    </footer>
 </body>
 </html>

@@ -1,5 +1,12 @@
-/*General Design*/
+/*Variables*/
+:root{
+    --blue: #34345b;
+    --white: #ebebeb;
+}
 
+
+
+/*General Design*/
 body, html {
     padding: 0;
     margin: 0;
@@ -11,7 +18,7 @@ body{
 }
 
 .odd{
-    background-color: #34345b;
+    background-color: var(--blue);
 }
 
 /*Header Design*/
@@ -80,7 +87,7 @@ header nav a:hover{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 800px;
+    padding: 80px;
 }
 
 .project-card{
@@ -90,10 +97,20 @@ header nav a:hover{
     flex-direction: column;
     align-items: center;
     border-radius: 30px;
+    margin:15px;
 }
 
 .project-text{
     padding: 20px;
+}
+
+.project-text a{
+    color: black;
+    text-decoration: none;
+}
+
+.project-text a:hover{
+    text-decoration: underline black 2px;
 }
 
 .project-card ul{
@@ -127,4 +144,59 @@ table{
 
 tr{
     height: 70px;
+}
+
+/*Contact Me Design*/
+
+#contact-me{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 30px;
+    color: var(--white);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#contact-me h1{
+    font-size: 60px;
+    color: var(--white);
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+input{
+    height: 25px;
+}
+
+#submit{
+    width:100px;
+}
+
+/*Footer Design*/
+i{
+    font-size: 25px;
+    padding: 3px 10px;
+    color: black;
+}
+
+i:hover{
+    color:var(--blue)
+}
+
+/*Media Query*/
+
+@media screen and (max-width:750px){
+    #projects{
+        flex-direction: column;
+    }
+
+    header nav{
+        flex-direction:column;
+    }
 }
