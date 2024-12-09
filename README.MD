@@ -1,4 +1,4 @@
-Github: https://github.com/pistachioczar/pistachioczar.github.io
+Github pages: https://pistachioczar.github.io/
 Author: Zach Hargett
 Date: 12/9/2024
 About: This is my portfolio website.
